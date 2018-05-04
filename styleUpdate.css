@@ -93,3 +93,40 @@ footer{
     color: #CCCCCC;
     z-index: 3;
 }
+
+.col-md-6.grid-imgContainer{
+    position: relative;
+    padding: 0;
+    width: 330px;
+    height: 240px;
+    margin-bottom: 25px;
+}
+
+/* Unexpected behavior: I thought by using the elements below "col.grid..." seperately that they would act differently at the different screen size but they don't. I wanted to ask about that. */
+
+            .col-xs-12.grid-imgContainer:nth-child(even){
+                padding: 0;
+                margin-left: 0;
+                margin-bottom: 25px;
+                /* width: 385px;
+                height: 275px; */
+            }
+            .col-md-6.grid-imgContainer:nth-child(even){
+                padding: 0;
+                margin-left: 28px;
+                margin-bottom: 25px;
+                width: 330px;
+                height: 240px;
+            }
+
+
+label.grid-imgLabel {
+    position: absolute;
+    z-index: 10;
+    bottom: 12px;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #777777;
+    color: white;
+    text-align: center;
+}
