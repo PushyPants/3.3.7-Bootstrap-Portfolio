@@ -1,0 +1,6 @@
+/* * {
+box-sizing: border-box;
+} 
+No need to include this when building off of Bootstrap. Bootstrap's reset does this by default
+*/
+
